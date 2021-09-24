@@ -138,6 +138,18 @@ class ModelInspector:
                 + "Please use only lowercase alphanumeric characters and hyphens (-)."
             )
 
+    @staticmethod
+    def transmogrify(text: str) -> str:
+        """
+        Generate a cleaner string, without non-ascii or special characters,
+        that can be used as a key and displayed in URL
+        """
+        # filter non ascii
+        ascii_text = text.encode("ascii", "ignore").decode()
+        # filter special characters
+        without_special = "".join(e for e in ascii_text if e.isalnum() or e.isspace() or e == "-")
+        return without_special.strip().replace(" ", "-").lower()
+
     def inspect(self, df: pd.DataFrame) -> None:
         self._validate_model(df)
         df = self._validate_df(df)
@@ -150,7 +162,7 @@ class ModelInspector:
     def upload_model(
         self, client: APIClient, project_key: str = "my-project", model_name: str = "my-model"
     ) -> requests.Response:
-        self._validate_project_key(project_key)
+        project_key = self.transmogrify(project_key)
         logging.info(f"Uploading model '{model_name}' to project '{project_key}'...")
         model = self._serialize()
         requirements = get_python_requirements()
@@ -173,7 +185,7 @@ class ModelInspector:
         project_key: str = "my-project",
         dataset_name: str = "my-dataset",
     ) -> requests.Response:
-        self._validate_project_key(project_key)
+        project_key = self.transmogrify(project_key)
         df = self._validate_df(df)
         logging.info(f"Uploading dataset '{dataset_name}' to project '{project_key}'...")
         response: requests.Response = client.upload_data(
