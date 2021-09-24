@@ -8,7 +8,7 @@ from .create_binary_classification import df, prediction_pipeline
 
 load_dotenv()
 
-client = Client(url="https://app.giskard.co", token=str(os.getenv("API_ACCESS_TOKEN")))
+client = Client(url=str(os.getenv("GISKARD_URL")), token=str(os.getenv("API_ACCESS_TOKEN")))
 
 
 def test_upload_binary_classification():

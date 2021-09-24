@@ -8,7 +8,7 @@ from .create_regression import categorical_columns, df_test, numeric_columns, pr
 
 load_dotenv()
 
-client = Client(url="https://app.giskard.co", token=str(os.getenv("API_ACCESS_TOKEN")))
+client = Client(url=str(os.getenv("GISKARD_URL")), token=str(os.getenv("API_ACCESS_TOKEN")))
 
 
 def test_upload_regression():

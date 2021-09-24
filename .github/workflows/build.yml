@@ -37,6 +37,7 @@ jobs:
     - name: Run tests
       env:
         API_ACCESS_TOKEN: ${{ secrets.API_ACCESS_TOKEN }}
+        GISKARD_URL: ${{ secrets.GISKARD_URL }}
       run: |
         make test
 

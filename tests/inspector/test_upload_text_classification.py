@@ -8,7 +8,7 @@ from .create_text_classification import df_test, prediction_pipeline, twenty_tra
 
 load_dotenv()
 
-client = Client(url="https://app.giskard.co", token=str(os.getenv("API_ACCESS_TOKEN")))
+client = Client(url=str(os.getenv("GISKARD_URL")), token=str(os.getenv("API_ACCESS_TOKEN")))
 
 
 def test_upload_text_classification():
