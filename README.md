@@ -1,4 +1,4 @@
-# ai-inspector
+# AI Inspector
 
 <div align="center">
 
