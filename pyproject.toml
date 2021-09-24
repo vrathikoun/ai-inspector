@@ -5,7 +5,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "ai-inspector"
-version = "0.1.0"
+version = "0.1.1"
 description = "Inspect your AI models visually, find bugs, give feedback 🕵️‍♀️ 💬"
 readme = "README.md"
 authors = ["Giskard AI <hello@giskard.ai>"]
