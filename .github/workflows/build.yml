@@ -27,6 +27,7 @@ jobs:
     - name: Install dependencies
       run: |
         poetry config virtualenvs.in-project true
+        poetry run pip install --upgrade pip
         poetry install
 
     - name: Run style checks

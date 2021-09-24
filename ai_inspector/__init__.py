@@ -17,3 +17,6 @@ def get_version() -> str:
 
 
 version: str = get_version()
+
+from .client import Client
+from .inspector import ModelInspector
