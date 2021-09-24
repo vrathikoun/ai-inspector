@@ -2,15 +2,15 @@
 
 <div align="center">
 
-[![Build status](https://github.com/Giskard-AI/ai-inspector/workflows/build/badge.svg?branch=master&event=push)](https://github.com/Giskard-AI/ai-inspector/actions?query=workflow%3Abuild)
+[![Build status](https://github.com/Giskard-AI/ai-inspector/workflows/build/badge.svg?branch=main&event=push)](https://github.com/Giskard-AI/ai-inspector/actions?query=workflow%3Abuild)
 [![Python Version](https://img.shields.io/pypi/pyversions/ai-inspector.svg)](https://pypi.org/project/ai-inspector/)
 [![Dependencies Status](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)](https://github.com/Giskard-AI/ai-inspector/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3Aapp%2Fdependabot)
 
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Security: bandit](https://img.shields.io/badge/security-bandit-green.svg)](https://github.com/PyCQA/bandit)
-[![Pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/Giskard-AI/ai-inspector/blob/master/.pre-commit-config.yaml)
+[![Pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/Giskard-AI/ai-inspector/blob/main/.pre-commit-config.yaml)
 [![Semantic Versions](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--versions-e10079.svg)](https://github.com/Giskard-AI/ai-inspector/releases)
-[![License](https://img.shields.io/github/license/Giskard-AI/ai-inspector)](https://github.com/Giskard-AI/ai-inspector/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/Giskard-AI/ai-inspector)](https://github.com/Giskard-AI/ai-inspector/blob/main/LICENSE)
 
 Inspect your AI models visually, find bugs, give feedback 🕵️‍♀️ 💬
 
@@ -70,27 +70,27 @@ Articles:
 ### Development features
 
 - Supports for `Python 3.7` and higher.
-- [`Poetry`](https://python-poetry.org/) as the dependencies manager. See configuration in [`pyproject.toml`](https://github.com/Giskard-AI/ai-inspector/blob/master/pyproject.toml) and [`setup.cfg`](https://github.com/Giskard-AI/ai-inspector/blob/master/setup.cfg).
+- [`Poetry`](https://python-poetry.org/) as the dependencies manager. See configuration in [`pyproject.toml`](https://github.com/Giskard-AI/ai-inspector/blob/main/pyproject.toml) and [`setup.cfg`](https://github.com/Giskard-AI/ai-inspector/blob/main/setup.cfg).
 - Automatic codestyle with [`black`](https://github.com/psf/black), [`isort`](https://github.com/timothycrosley/isort) and [`pyupgrade`](https://github.com/asottile/pyupgrade).
 - Ready-to-use [`pre-commit`](https://pre-commit.com/) hooks with code-formatting.
 - Type checks with [`mypy`](https://mypy.readthedocs.io); docstring checks with [`darglint`](https://github.com/terrencepreilly/darglint); security checks with [`safety`](https://github.com/pyupio/safety) and [`bandit`](https://github.com/PyCQA/bandit)
 - Testing with [`pytest`](https://docs.pytest.org/en/latest/).
-- Ready-to-use [`.editorconfig`](https://github.com/Giskard-AI/ai-inspector/blob/master/.editorconfig), [`.dockerignore`](https://github.com/Giskard-AI/ai-inspector/blob/master/.dockerignore), and [`.gitignore`](https://github.com/Giskard-AI/ai-inspector/blob/master/.gitignore). You don't have to worry about those things.
+- Ready-to-use [`.editorconfig`](https://github.com/Giskard-AI/ai-inspector/blob/main/.editorconfig), [`.dockerignore`](https://github.com/Giskard-AI/ai-inspector/blob/main/.dockerignore), and [`.gitignore`](https://github.com/Giskard-AI/ai-inspector/blob/main/.gitignore). You don't have to worry about those things.
 
 ### Deployment features
 
 - `GitHub` integration: issue and pr templates.
-- `Github Actions` with predefined [build workflow](https://github.com/Giskard-AI/ai-inspector/blob/master/.github/workflows/build.yml) as the default CI/CD.
-- Everything is already set up for security checks, codestyle checks, code formatting, testing, linting, docker builds, etc with [`Makefile`](https://github.com/Giskard-AI/ai-inspector/blob/master/Makefile#L89). More details in [makefile-usage](#makefile-usage).
-- [Dockerfile](https://github.com/Giskard-AI/ai-inspector/blob/master/docker/Dockerfile) for your package.
+- `Github Actions` with predefined [build workflow](https://github.com/Giskard-AI/ai-inspector/blob/main/.github/workflows/build.yml) as the default CI/CD.
+- Everything is already set up for security checks, codestyle checks, code formatting, testing, linting, docker builds, etc with [`Makefile`](https://github.com/Giskard-AI/ai-inspector/blob/main/Makefile#L89). More details in [makefile-usage](#makefile-usage).
+- [Dockerfile](https://github.com/Giskard-AI/ai-inspector/blob/main/docker/Dockerfile) for your package.
 - Always up-to-date dependencies with [`@dependabot`](https://dependabot.com/). You will only [enable it](https://docs.github.com/en/github/administering-a-repository/enabling-and-disabling-version-updates#enabling-github-dependabot-version-updates).
-- Automatic drafts of new releases with [`Release Drafter`](https://github.com/marketplace/actions/release-drafter). You may see the list of labels in [`release-drafter.yml`](https://github.com/Giskard-AI/ai-inspector/blob/master/.github/release-drafter.yml). Works perfectly with [Semantic Versions](https://semver.org/) specification.
+- Automatic drafts of new releases with [`Release Drafter`](https://github.com/marketplace/actions/release-drafter). You may see the list of labels in [`release-drafter.yml`](https://github.com/Giskard-AI/ai-inspector/blob/main/.github/release-drafter.yml). Works perfectly with [Semantic Versions](https://semver.org/) specification.
 
 ### Open source community features
 
-- Ready-to-use [Pull Requests templates](https://github.com/Giskard-AI/ai-inspector/blob/master/.github/PULL_REQUEST_TEMPLATE.md) and several [Issue templates](https://github.com/Giskard-AI/ai-inspector/tree/master/.github/ISSUE_TEMPLATE).
+- Ready-to-use [Pull Requests templates](https://github.com/Giskard-AI/ai-inspector/blob/main/.github/PULL_REQUEST_TEMPLATE.md) and several [Issue templates](https://github.com/Giskard-AI/ai-inspector/tree/main/.github/ISSUE_TEMPLATE).
 - Files such as: `LICENSE`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, and `SECURITY.md` are generated automatically.
-- [`Stale bot`](https://github.com/apps/stale) that closes abandoned issues after a period of inactivity. (You will only [need to setup free plan](https://github.com/marketplace/stale)). Configuration is [here](https://github.com/Giskard-AI/ai-inspector/blob/master/.github/.stale.yml).
+- [`Stale bot`](https://github.com/apps/stale) that closes abandoned issues after a period of inactivity. (You will only [need to setup free plan](https://github.com/marketplace/stale)). Configuration is [here](https://github.com/Giskard-AI/ai-inspector/blob/main/.github/.stale.yml).
 - [Semantic Versions](https://semver.org/) specification with [`Release Drafter`](https://github.com/marketplace/actions/release-drafter).
 
 ## Installation
@@ -109,7 +109,7 @@ poetry add ai-inspector
 
 ### Makefile usage
 
-[`Makefile`](https://github.com/Giskard-AI/ai-inspector/blob/master/Makefile) contains a lot of functions for faster development.
+[`Makefile`](https://github.com/Giskard-AI/ai-inspector/blob/main/Makefile) contains a lot of functions for faster development.
 
 <details>
 <summary>1. Download and remove Poetry</summary>
@@ -255,7 +255,7 @@ Remove docker image with
 make docker-remove
 ```
 
-More information [about docker](https://github.com/Giskard-AI/ai-inspector/tree/master/docker).
+More information [about docker](https://github.com/Giskard-AI/ai-inspector/tree/main/docker).
 
 </p>
 </details>
@@ -303,15 +303,15 @@ We use [`Release Drafter`](https://github.com/marketplace/actions/release-drafte
 |            `documentation`            |    📝 Documentation     |
 |            `dependencies`             | ⬆️ Dependencies updates |
 
-You can update it in [`release-drafter.yml`](https://github.com/Giskard-AI/ai-inspector/blob/master/.github/release-drafter.yml).
+You can update it in [`release-drafter.yml`](https://github.com/Giskard-AI/ai-inspector/blob/main/.github/release-drafter.yml).
 
 GitHub creates the `bug`, `enhancement`, and `documentation` labels for you. Dependabot creates the `dependencies` label. Create the remaining labels on the Issues tab of your GitHub repository, when you need them.
 
 ## 🛡 License
 
-[![License](https://img.shields.io/github/license/Giskard-AI/ai-inspector)](https://github.com/Giskard-AI/ai-inspector/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/Giskard-AI/ai-inspector)](https://github.com/Giskard-AI/ai-inspector/blob/main/LICENSE)
 
-This project is licensed under the terms of the `Apache Software License 2.0` license. See [LICENSE](https://github.com/Giskard-AI/ai-inspector/blob/master/LICENSE) for more details.
+This project is licensed under the terms of the `Apache Software License 2.0` license. See [LICENSE](https://github.com/Giskard-AI/ai-inspector/blob/main/LICENSE) for more details.
 
 ## 📃 Citation
 
