@@ -267,8 +267,8 @@ class ModelInspector:
             style=overall_style,
         )
         url_input = widgets.Text(
-            value="https://app.giskard.co",
-            placeholder="https://app.giskard.co",
+            value="https://app.giskard.ai",
+            placeholder="https://app.giskard.ai",
             description="Giskard URL",
             disabled=False,
             style=overall_style,
