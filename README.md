@@ -16,6 +16,37 @@ Inspect your AI models visually, find bugs, give feedback 🕵️‍♀️ 💬
 
 </div>
 
+## Very first steps
+
+### Initial
+1. Clone the project in a local directory
+
+2. Using `pyenv` setup a local python 3.7
+
+3. If you don't have `Poetry` installed run:
+
+```bash
+make download-poetry
+```
+
+4. Initialize poetry and install `pre-commit` hooks:
+
+```bash
+make install
+```
+
+5. Tests folder contain scripts that can upload data to your Giskard Backend. Run them using
+```bash 
+make test
+```
+Or individually:
+
+```bash 
+poetry run pytest tests/model_inspector/test_upload_text_classification.py
+```
+
+Make sure you have setup the correct URL, as well as your Giskard API token in a `.env` file at the root of the project. 
+
 ### Poetry
 
 Want to know more about Poetry? Check [its documentation](https://python-poetry.org/docs/).
